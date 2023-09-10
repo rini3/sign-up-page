@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-image: url("https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg");
+            }
+            section{
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+            }
+            section>div{
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 -2px;
+            }
+            #d1{
+                width: 400px;
+                height: 400px;
+                overflow: hidden;
+            }
+            section img{
+                height: 100%;
+            }
+            #d2{
+                height: 376px;
+                width: 400px;
+                padding: 8px 40px 15px 30px;
+                background-color: rgb(21, 35, 74);
+            }
+            input{
+                color: white;
+                height: 40px;
+                margin: 12px 0;
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid rgb(202, 202, 202);
+                display: block;
+                width: 100%;
+            }
+            #d2 input::placeholder{
+                color: white;
+            }
+            #d2 button{
+                text-decoration: none;
+                color: white;
+                background-color: rgb(0, 162, 255);
+                height: 40px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                border: 1px solid rgb(15, 90, 134);
+                font-weight: bold;
+            }
+            #d2 button:hover{
+                background-color: rgb(15, 90, 134);
+            }
+            #d2 a{
+                color: rgb(255, 255, 255);
+                margin-left: 20px;
+            }
+            #d2 a:hover{
+                color: rgb(202, 202, 202);
+            }
+        </style>
+    </head>
+    <body>
+        <section >
+            <div id="d1">
+                <img src="https://cdn.pixabay.com/photo/2013/09/01/17/07/calculator-178127_1280.jpg" alt="">
+            </div>
+            <div id="d2">
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" maxlength="50" pattern="[a-zA-Z]+" placeholder="Full Name" required/>
+                    <input type="email" maxlength="50" placeholder="Email Address" required/>
+                    <input type="tel" placeholder="Phone Number - Optional"/>
+                    <input type="password" pattern="[0-9]+" maxlength="10" min="10" placeholder="Password" required/>
+                    <input type="password" pattern="[0-9]+" maxlength="10" min="10" placeholder="Password" required/>
+                    <button>SignUp Now</button>
+                    <a href="">I have an account</a>
+                </form>
+            </div>
+        </section>
+    </body>
+
+</html>
